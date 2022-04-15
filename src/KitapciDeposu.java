@@ -1,0 +1,60 @@
+public class KitapciDeposu {
+
+
+    private String kitapAdi;
+    private int kitapNo;
+    private String yazarAdi;
+    private int kitapFiyat;
+
+    public KitapciDeposu() {//psiz constructor
+    }
+
+    public KitapciDeposu(String kitapAdi, int kitapNo, String yazarAdi, int kitapFiyat) {//pli constructor
+        this.kitapAdi = kitapAdi;
+        this.kitapNo = kitapNo;
+        this.yazarAdi = yazarAdi;
+        this.kitapFiyat = kitapFiyat;
+    }
+
+    public String getKitapAdi() {
+        return kitapAdi;
+    }
+
+    public void setKitapAdi(String kitapAdi) {
+        this.kitapAdi = kitapAdi;
+    }
+
+    public int getKitapNo() {
+        return kitapNo;
+    }
+
+    public void setKitapNo(int kitapNo) {
+        this.kitapNo = kitapNo;
+    }
+
+    public String getYazarAdi() {
+        return yazarAdi;
+    }
+
+    public void setYazarAdi(String yazarAdi) {
+        this.yazarAdi = yazarAdi;
+    }
+
+    public int getKitapFiyat() {
+        return kitapFiyat;
+    }
+
+    public void setKitapFiyat(int kitapFiyat) {
+        this.kitapFiyat = kitapFiyat;
+    }
+
+    @Override
+    public String toString() {
+        return "KitapciDeposu{" +
+                "kitapAdi='" + kitapAdi + '\'' +
+                ", kitapNo=" + kitapNo +
+                ", yazarAdi='" + yazarAdi + '\'' +
+                ", kitapFiyat=" + kitapFiyat +
+                '}';
+    }
+}
