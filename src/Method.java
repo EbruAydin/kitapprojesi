@@ -24,7 +24,7 @@ public class Method {
                     "4-NUMARA ILE SİLME\r\n     " +
                     "5-KITAP LISTELEME\r\n     " +
                     "6-CIKIS");
-            System.out.println("bir islem seciniz");
+            System.out.println("Bir islem seciniz");
             int tercih = scan.nextInt();
             switch(tercih) {
                 case 1:

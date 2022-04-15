@@ -1,5 +1,7 @@
 public class KitapciDeposu {
 
+    //POJO CLASS
+
     private String kitapAdi;
     private int kitapNo;
     private String yazarAdi;
