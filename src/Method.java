@@ -87,6 +87,8 @@ public class Method {
         }
         System.out.println("Isleminiz basariyla gerceklesmistir. Menuye yonlendiriliyorsunuz, lutfen bekleyiniz.");
         Thread.sleep(4000);
+        anaMenu();
+
     }
 
     private static void numaraIleSil() throws InterruptedException {//Mukiye H.
