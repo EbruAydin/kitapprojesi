@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 public class KitapciDeposu {
 
     private String kitapAdi;
@@ -20,7 +22,7 @@ public class KitapciDeposu {
     }
 
     public void setKitapAdi(String kitapAdi) {
-        this.kitapAdi = kitapAdi;
+                this.kitapAdi=kitapAdi;
     }
 
     public int getKitapNo() {
@@ -28,6 +30,7 @@ public class KitapciDeposu {
     }
 
     public void setKitapNo(int kitapNo) {
+
         this.kitapNo = kitapNo;
     }
 

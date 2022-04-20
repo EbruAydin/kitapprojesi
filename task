@@ -23,3 +23,120 @@
 		 * yazar adi ve fiyat bilgileri istenmeli
 		 */
 		// Kitapcı_KitapEkle kitap = new Kitapcı_KitapEkle();
+
+
+		/*
+
+		System.out.println("Kitap adi ile aramak icin 1'e\t\nYazar adi ile aramak icin 2'ye" +
+                            "\t\nFiyat ile aramak icin 3'e basiniz");
+                    System.out.println("Menuye donmek icin 0'a\t\nCikmak icin 6'a basiniz.");
+                    int tercih = scan.nextInt();
+
+                    switch (tercih) {
+                        case 1: {
+                            System.out.println("Kitap adi giriniz :");
+                            String kitapAdi = scan.nextLine();
+                            boolean varMi = false;
+                            int i = 0;
+                            do {
+                                if (kitapListesi.get(i).getKitapAdi().equalsIgnoreCase(kitapAdi)) {
+                                    System.out.println("Isleminizin sonucunu asagidaki gibi gorebilirsiniz.");
+                                    System.out.print("Kitap adi : " + kitapListesi.get(i).getKitapAdi() +
+                                            "Yazar adi : " + kitapListesi.get(i).getYazarAdi() +
+                                            "Kitap no : " + kitapListesi.get(i).getKitapNo() +
+                                            "Kitap fiyati :" + kitapListesi.get(i).getKitapFiyat());
+                                }
+                                i++;
+                            } while (varMi == true);
+
+                            if (varMi) System.out.println("Girdiginiz isim de kitap bulunamadi.");
+                        }
+
+                        while (true) {
+                            System.out.println("Isleminize devam etmek istiyorsaniz 1'e\nCikis yapmak icin 0'a basiniz");
+                            try {
+                                tercih = scan.nextInt();
+                                if (tercih == 1) numaraIleKitap();
+                                else if (tercih == 0) anaMenu();
+                            } catch (Exception e) {
+                                //e.printStackTrace();
+                                String str = scan.next();
+                                System.out.println("Lutfen gecerli bir islem giriniz");
+                            }
+                        }
+
+                        case 2: {
+                            System.out.println("Yazar adi giriniz :");
+                            String yazarAdi = scan.nextLine();
+                            boolean varMi = false;
+                            int i = 0;
+                            do {
+                                if (kitapListesi.get(i).getYazarAdi().equalsIgnoreCase(yazarAdi)) {
+                                    System.out.println("Isleminizin sonucunu asagidaki gibi gorebilirsiniz.");
+                                    System.out.print("Kitap adi : " + kitapListesi.get(i).getKitapAdi() +
+                                            "Yazar adi : " + kitapListesi.get(i).getYazarAdi() +
+                                            "Kitap no : " + kitapListesi.get(i).getKitapNo() +
+                                            "Kitap fiyati :" + kitapListesi.get(i).getKitapFiyat());
+                                }
+                                i++;
+                            } while (varMi == true);
+
+                            if (varMi) System.out.println("Girdiginiz isim de kitap bulunamadi.");
+                        }
+
+                        while (true) {
+                            System.out.println("Isleminize devam etmek istiyorsaniz 1'e\nCikis yapmak icin 0'a basiniz");
+                            try {
+                                tercih = scan.nextInt();
+                                if (tercih == 1) numaraIleKitap();
+                                else if (tercih == 0) anaMenu();
+                            } catch (Exception e) {
+                                 //e.printStackTrace();
+                                String str = scan.next();
+                                System.out.println("Lutfen gecerli bir islem giriniz");
+                            }
+                        }
+                        case 3: {
+                            System.out.println("Kitap fiyati giriniz :");
+                            int kitapFiyati = scan.nextInt();
+                            boolean varMi = false;
+                            int i = 0;
+                            do {
+
+                                if (kitapListesi.get(i).getKitapFiyat() == kitapFiyati) {
+                                    System.out.println("Isleminizin sonucunu asagidaki gibi gorebilirsiniz.");
+                                    System.out.print("Kitap adi : " + kitapListesi.get(i).getKitapAdi() +
+                                            "Yazar adi : " + kitapListesi.get(i).getYazarAdi() +
+                                            "Kitap no : " + kitapListesi.get(i).getKitapNo() +
+                                            "Kitap fiyati :" + kitapListesi.get(i).getKitapFiyat());
+                                }
+                                i++;
+                            } while (varMi == true);
+
+                            if (varMi) System.out.println("Girdiginiz isim de kitap bulunamadi.");
+                        }
+
+                        while (true) {
+                            System.out.println("Isleminize devam etmek istiyorsaniz 1'e\nCikis yapmak icin 0'a basiniz");
+                            try {
+                                tercih = scan.nextInt();
+                                if (tercih == 1) numaraIleKitap();
+                                else if (tercih == 0) anaMenu();
+                            } catch (Exception e) {
+                                //e.printStackTrace();
+                                String str = scan.next();
+                                System.out.println("Lutfen gecerli bir islem giriniz");
+                            }
+                        }
+                        case 0:
+                            anaMenu();
+                        case 6:
+                            cikis();
+                        default: {
+                            System.out.println("Hatali giris yaptiniz. ");
+                            bilgiIleKitap();
+
+                        }
+                    }
+                }
+		/*
