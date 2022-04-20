@@ -38,6 +38,7 @@ public class Method {
         }
 
 
+
         switch (tercih) {//anaMenu() methodunu eklemeye gerek yok burada, zaten method icerisinde anamenu call edildi.
             case 1:
                 kitapEkle();
