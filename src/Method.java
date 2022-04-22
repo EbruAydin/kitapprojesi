@@ -296,15 +296,20 @@ public class Method {
 
     private static void kitapEkle() throws InterruptedException {//Serkan B.
 
+        KitapciDeposu kitap=new KitapciDeposu();//bos parametreli bir obje ile pojodan try catch set ettigimiz degerleri
+        //buraya cekebiliriz.
+
         System.out.print("kitap adi :");
         scan.nextLine();// dummy art arda olan scanlarde ilk sout altina
         String kitapAdi = scan.nextLine();
         System.out.print("yazar adi :");
         String yazarAdi = scan.nextLine();
-        System.out.print("fiyat :");
-        int kitapFiyat = scan.nextInt();
+
+        int kitapFiyat = kitap.setKitapFiyat();
+
         int kitapNo = 1000 + kitapSayac;
         kitapSayac++;
+
         KitapciDeposu yeniKitap = new KitapciDeposu(kitapAdi, kitapNo, yazarAdi, kitapFiyat);
         kitapListesi.add(yeniKitap);
 

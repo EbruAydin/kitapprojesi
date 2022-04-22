@@ -9,14 +9,19 @@ public class KitapciDeposu {
     private String yazarAdi;
     private int kitapFiyat;
 
+    static Scanner scan = new Scanner(System.in);
+
+
     public KitapciDeposu() {
     }
 
     public KitapciDeposu(String kitapAdi, int kitapNo, String yazarAdi, int kitapFiyat) {
+
         this.kitapAdi = kitapAdi;
-        this.kitapNo = kitapNo;
         this.yazarAdi = yazarAdi;
         this.kitapFiyat = kitapFiyat;
+        this.kitapNo = kitapNo;
+
     }
 
     public String getKitapAdi() {
@@ -24,16 +29,19 @@ public class KitapciDeposu {
     }
 
     public void setKitapAdi(String kitapAdi) {
-                this.kitapAdi=kitapAdi;
+        this.kitapAdi = kitapAdi;
+
     }
 
     public int getKitapNo() {
         return this.kitapNo;
     }
 
-    public void setKitapNo(int kitapNo) {
+    public void setKitapNo(int kitapNo) {//parametresiz hale getir
 
-        this.kitapNo = kitapNo;
+        this.kitapNo = this.kitapNo;
+
+
     }
 
     public String getYazarAdi() {
@@ -41,15 +49,31 @@ public class KitapciDeposu {
     }
 
     public void setYazarAdi(String yazarAdi) {
-        this.yazarAdi = yazarAdi;
+        this.yazarAdi=yazarAdi;
     }
+
 
     public int getKitapFiyat() {
         return this.kitapFiyat;
     }
 
-    public void setKitapFiyat(int kitapFiyat) {
-        this.kitapFiyat = kitapFiyat;
+    public int setKitapFiyat() {
+
+        while (true) {
+            int kitapF = 0;
+            try {
+                System.out.print("Kitap Fiyati : ");
+                kitapF = scan.nextInt();
+                if (kitapF > 0) {
+                    return kitapF;
+                } else {
+                    System.out.println("Fiyat eksi degerde olmaz.");
+                }
+            } catch (Exception e) {
+                String str = scan.nextLine();
+                System.out.println("Yalniz numerik degerler giriniz.");
+            }
+        }
     }
 
     @Override
