@@ -243,14 +243,14 @@ public class Method {
 
 
             case 3: {
-                System.out.println("Kitap fiyati giriniz :");
                 scan.nextLine();//dummy
-                int kitapFiyati = scan.nextInt();
+                KitapciDeposu kitap=new KitapciDeposu();
+                int kitapFiyat = kitap.setKitapFiyat();//try catch buraya da eklendi.
 
                 int kontrol = 0; // kitap yoksa 0, varsa 1
 
                 for (KitapciDeposu each : kitapListesi) {
-                    if (each.getKitapFiyat() == kitapFiyati) {
+                    if (each.getKitapFiyat() == kitapFiyat) {
                         System.out.println("*************");
                         System.out.println("Kitap Adi\t\t\t: " + each.getKitapAdi());
                         System.out.println("Kitap Yazari\t\t: " + each.getYazarAdi());
